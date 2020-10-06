@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+  api:
+    build: 
+      context: ./
+      dockerfile: ./docker/api/Dockerfile
+      target: builder
+    command: ["realize", "start"]
+    working_dir: /app
+    volumes: 
+      - ./api:/app
+    ports: 
+      - 80:80
