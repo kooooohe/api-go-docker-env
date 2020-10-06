@@ -1,3 +1,3 @@
 # api-go-docker-env
 
-Template for golang env using docker-compose
+A template for golang env using docker-compose
